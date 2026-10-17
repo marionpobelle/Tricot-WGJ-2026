@@ -3,6 +3,13 @@
 <<declare $emotion = "neutral">>
 <<jump Dialogue_1>>
 ===
+title: Dialogue_0
+color: blue
+---
+Claire: Finally...
+Claire: I've been meaning to sit down and knit this scarf for a long time!
+Claire: A little peace and quiet... 
+===
 title: Dialogue_1
 color: yellow
 ---
@@ -179,9 +186,20 @@ Claire: How am I supposed to feel?
 title: Dialogue_18
 color: yellow
 ---
-Claire: Note to myself: send a message to Anya; I think she’s been struggling at work recently. We should do coffee sometimes. 
+Claire: Note to myself: send a message to Anya; I think she’s been struggling at work recently. 
+Claire: We should do coffee sometimes. 
 -> Ok send it NOW or else you'll forget.
     <<set $emotion = "anxiety">>
 -> It's ok, I'll do it tomorrow. 
     <<set $emotion = "neutral">>
 ===
+title: Dialogue_19
+color: yellow
+---
+Claire: Colette, you alright dear? <<wait 0.4>> <i> The cat purrs. <i>
+-> I wish I could lay in bed all day with you and feel... content. 
+    <<set $emotion = "sadness">>
+-> You're so CUTE. 
+    <<set $emotion = "joy">>
+===
+
