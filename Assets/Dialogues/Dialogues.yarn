@@ -1,4 +1,140 @@
 ﻿title: Dialogues
 ---
-This is an example of a Yarn Spinner script. Write your dialogue here!
+<<declare $emotion = "neutral">>
+<<jump Dialogue_1>>
+===
+title: Dialogue_1
+color: yellow
+---
+Claire: I think I left the bathroom lights on... 
+-> Probably not.
+	<<set $emotion = "reassurance">>
+-> Maybe I should check?
+    <<set $emotion = "anxiety">>
+===
+title: Dialogue_2
+color: yellow
+---
+Claire: Shit, I forgot I had to exercise tonight. It’s been like... two weeks?
+-> It's fine. I'll do it later...
+	<<set $emotion = "reassurance">>
+-> Fuck.
+    <<set $emotion = "anxiety">>
+    Claire: I’m so bad at actually sticking to a schedule. 
+    -> Let's pray I actually stick to it this time.
+        <<set $emotion = "anxiety">>
+    -> Life gets busy sometimes. 
+        <<set $emotion = "reassurance">>
+===
+title: Dialogue_3
+color: yellow
+---
+Claire: Ok, don’t forget the drink at Anne’s tomorrow... might have to bring some wine. Do we have wine?
+-> Ooh wine, feelin' like a fancy lady. 
+    <<set $emotion = "humor">>
+-> Nope, you forgot to buy some again. Damn! 
+    <<set $emotion = "anger">>
+===
+title: Dialogue_4
+color: yellow
+---
+Claire: God, just stop thinking about stuff! How does anyone find knitting relaxing? 
+-> It's not like I really make anything actually pretty anyways...
+    <<set $emotion = "sadness">>
+-> They don't. They just pretend so we all feel bad, duh.
+    <<set $emotion = "humor">>
+===
+title: Dialogue_5
+color: yellow
+---
+Claire: For tomorrow’s lunch... I might have some leftovers in the fridge. 
+-> Are you sure? Maybe you should check?
+    <<set $emotion = "anxiety">>
+    Claire: I... Ok, I'll check right after.
+-> Yeah, you're good.
+    <<set $emotion = "reassurance">>
+===
+title: Dialogue_6
+color: yellow
+---
+Claire: I'll just buy something tomorrow. If I have time.
+-> Damn, I'll never get a proper break, will I?
+    <<set $emotion = "anger">>
+    Claire: Ok... One day at a time, Claire.
+    <<set $emotion = "reassurance">>
+        -> Breathe. 
+-> Oh! Maybe we could check out the new korean restaurant?
+    <<set $emotion = "joy">>
+===
+title: Dialogue_7
+color: yellow
+---
+Claire: Does my eye look weird? It feels weird.
+-> Girl, you're fine.
+    <<set $emotion = "reassurance">>
+-> Please, please, please, I can't be sick right now.
+    <<set $emotion = "anxiety">>
+===
+title: Dialogue_8
+color: yellow
+---
+Claire: Maybe Mom was right. If I had worked harder, I probably would have my driver's license by now. 
+Claire: She never misses a chance to remind me of it. How nice of her. 
+-> That's actually infuriating.
+    <<set $emotion = "anger">>
+-> When I do get my license, guess who's not invited in my car?
+    <<set $emotion = "humor">>
+===
+title: Dialogue_9
+color: yellow
+---
+Claire: Fuck, I forgot today was laundry day. 
+Claire: UGH, I think I don’t have any clean pants for tomorrow. 
+-> Why am I so bad at remembering things?!
+   <<set $emotion = "anger">>
+-> It's not the first time I forget this kind of stuff...
+    <<set $emotion = "sadness">>
+===
+title: Dialogue_10
+color: yellow
+---
+Claire: Ok, relax. This is a relaxing time, not an overthinking time. 
+Claire: Breathe. Why is my chest so tight?
+-> It's ok, one thing at a time.
+   <<set $emotion = "reassurance">>
+-> Why do I need a textbook on how to relax?!
+    <<set $emotion = "anger">>
+===
+title: Dialogue_11
+color: yellow
+---
+Claire: Knitting is actually a bit harder than I thought.
+-> Maybe I should give up. 
+    <<set $emotion = "anxiety">>
+    Claire: Like I did with drawing... and pottery...
+-> Girl, you really thought you could be an expert after 15 minutes?
+    <<set $emotion = "humor">>
+    Claire: chuckles. Yeah, right.
+===
+title: Dialogue_12
+color: yellow
+---
+Claire: Ok, so laundry... maybe on Wednesday after work? 
+Claire: No, Wednesday I need to go to the post office, or else they’ll send my package back. 
+-> This is so inconvenient. If only I’d done it sooner... 
+     <<set $emotion = "anger">>
+    Claire: like this afternoon... 
+-> Ok I REALLY need to mark this down. 
+     <<set $emotion = "anxiety">>
+===
+title: Dialogue_13
+color: yellow
+---
+Claire: I had a full afternoon of arts & crafts planned and did nothing but sleep. 
+Claire: Well done. 
+-> I's okay. I chose rest today. 
+     <<set $emotion = "joy">>
+    Claire: like this afternoon... 
+-> I can't help but feel like a failure. 
+     <<set $emotion = "sadness">>
 ===
