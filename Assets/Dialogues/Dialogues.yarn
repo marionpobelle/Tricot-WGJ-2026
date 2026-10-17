@@ -91,7 +91,7 @@ color: yellow
 Claire: Fuck, I forgot today was laundry day. 
 Claire: UGH, I think I don’t have any clean pants for tomorrow. 
 -> Why am I so bad at remembering things?!
-   <<set $emotion = "anger">>
+    <<set $emotion = "anger">>
 -> It's not the first time I forget this kind of stuff...
     <<set $emotion = "sadness">>
 ===
@@ -101,7 +101,7 @@ color: yellow
 Claire: Ok, relax. This is a relaxing time, not an overthinking time. 
 Claire: Breathe. Why is my chest so tight?
 -> It's ok, one thing at a time.
-   <<set $emotion = "reassurance">>
+    <<set $emotion = "reassurance">>
 -> Why do I need a textbook on how to relax?!
     <<set $emotion = "anger">>
 ===
@@ -122,10 +122,10 @@ color: yellow
 Claire: Ok, so laundry... maybe on Wednesday after work? 
 Claire: No, Wednesday I need to go to the post office, or else they’ll send my package back. 
 -> This is so inconvenient. If only I’d done it sooner... 
-     <<set $emotion = "anger">>
+    <<set $emotion = "anger">>
     Claire: like this afternoon... 
 -> Ok I REALLY need to mark this down. 
-     <<set $emotion = "anxiety">>
+    <<set $emotion = "anxiety">>
 ===
 title: Dialogue_13
 color: yellow
@@ -133,8 +133,55 @@ color: yellow
 Claire: I had a full afternoon of arts & crafts planned and did nothing but sleep. 
 Claire: Well done. 
 -> I's okay. I chose rest today. 
-     <<set $emotion = "joy">>
+    <<set $emotion = "joy">>
     Claire: like this afternoon... 
 -> I can't help but feel like a failure. 
-     <<set $emotion = "sadness">>
+    <<set $emotion = "sadness">>
+===
+title: Dialogue_14
+color: yellow
+---
+Claire: GOD, I literally can’t stop thinking. Is it because I haven’t had free time in a long time now? 
+-> Maybe because my brain isn’t as exhausted from work as it usually is? 
+    <<set $emotion = "neutral">>
+-> Take it easy. One thought at a time. 
+    <<set $emotion = "reassurance">>
+===
+title: Dialogue_15
+color: yellow
+---
+Claire: I don’t know when I’ll get a free day again... Not in a long time, I think. 
+-> Should’ve enjoyed it. 
+    <<set $emotion = "anxiety">>
+-> But in the end... it was a good day, wasn't it? Yes... (she smiles)
+    <<set $emotion = "joy">>
+===
+title: Dialogue_16
+color: yellow
+---
+Claire: With enough practice, I’ll knit a sweater in no time. Or I could make gloves! 
+-> Cute gloves for the chilly autumn weather... That’s nice. 
+    <<set $emotion = "joy">>
+-> I could make a scarf for Mom... if she wasn't such a pain to be around. 
+    <<set $emotion = "sadness">>
+===
+title: Dialogue_17
+color: yellow
+---
+Claire: Isn’t rest supposed to feel restful? 
+Claire: How am I supposed to feel?
+-> Is it ever possible to stop thinking? 
+    <<set $emotion = "neutral">>
+    Claire: I think... I hope one day I'll get there.
+-> I feel... too much. 
+    <<set $emotion = "sadness">>
+===
+title: Dialogue_18
+color: yellow
+---
+Claire: Note to myself: send a message to Anya; I think she’s been struggling at work recently. We should do coffee sometimes. 
+-> Ok send it NOW or else you'll forget.
+    <<set $emotion = "anxiety">>
+-> It's ok, I'll do it tomorrow. 
+    <<set $emotion = "neutral">>
 ===
