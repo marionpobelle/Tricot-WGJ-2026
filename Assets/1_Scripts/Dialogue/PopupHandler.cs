@@ -1,11 +1,12 @@
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PopupHandler : MonoBehaviour
 {
     [Title("PARAMETERS")]
-    [SerializeField] private List<string> _availablePopTexts = new List<string>();
+    [SerializeField] private List<PopText> _availablePopTexts = new List<PopText>();
     [SerializeField] private List<Transform> _availablePopupPositions = new List<Transform>();
 
     [Title("REFERENCES")]
@@ -26,7 +27,7 @@ public class PopupHandler : MonoBehaviour
         }
     }
 
-    public void SpawnPopup()
+    public void SpawnPopup(string dialogueid)
     {
         if (_availablePopupPositions.Count <= 0 || _availablePopTexts.Count <= 0)
         {
@@ -36,8 +37,24 @@ public class PopupHandler : MonoBehaviour
         Transform poptransform = _availablePopupPositions[UnityEngine.Random.Range(0, _availablePopupPositions.Count)];
         _availablePopupPositions.RemoveAll(x => x == poptransform);
         PopupPrefab popup = Instantiate(_prefab, poptransform);
-        string poptext = _availablePopTexts[UnityEngine.Random.Range(0, _availablePopTexts.Count)];
-        _availablePopTexts.RemoveAll(x => x == poptext);
-        popup.InitPopup(poptext);
+        PopText poptext = _availablePopTexts.Find(x => x.DialogueID == dialogueid);
+        if (poptext == null)
+        {
+            Debug.LogError("Could not find popup with given dialogue ID!");
+            popup.InitPopup("ERROR");
+        }
+        else
+        {
+            _availablePopTexts.RemoveAll(x => x == poptext);
+            popup.InitPopup(poptext.Text);
+        }
     }
+}
+
+[System.Serializable]
+public class PopText
+{
+    public string DialogueID;
+
+    public string Text;
 }
