@@ -1,0 +1,118 @@
+using System;
+using UnityEngine;
+using Yarn.Unity;
+
+public class AudioHandler : MonoBehaviour
+{
+    //List of sounds
+    public Sound[] sounds;
+
+    public static AudioHandler Instance;
+
+    /***
+    Awake is called when the script instance is being loaded.
+    ***/
+    void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        foreach (Sound s in sounds)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
+        }
+    }
+
+    /***
+    Plays the clip.
+    ***/
+    public void Play(string name)
+    {
+        Debug.Log("Playing Audio");
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Play();
+    }
+
+    /***
+    Pauses the clip.
+    ***/
+    public void Pause(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Pause();
+    }
+
+    /***
+    Unpauses the clip.
+    ***/
+    public void UnPause(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.UnPause();
+    }
+
+    /***
+    Stops the clip.
+    ***/
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.Stop();
+    }
+
+    /***
+    Checks if the clip is playing.
+    ***/
+    public bool isPlaying(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return false;
+        }
+        return s.source.isPlaying;
+    }
+
+    /***
+    Plays the clip.
+    AudioSource.PlayOneShot does not cancel clips that are already being played by AudioSource.PlayOneShot and AudioSource.Play.
+    ***/
+    public void PlayOneShot(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+        s.source.PlayOneShot(s.clip);
+    }
+}
