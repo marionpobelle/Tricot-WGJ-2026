@@ -196,7 +196,7 @@ Claire: We should do coffee sometimes.
 title: Dialogue_19
 color: yellow
 ---
-Claire: Colette, you alright dear? <<wait 0.4>> <i> The cat purrs. <i>
+Claire: Colette, you alright dear?
 -> I wish I could lay in bed all day with you and feel... content. 
     <<set $emotion = "sadness">>
 -> You're so CUTE. 
