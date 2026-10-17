@@ -1,4 +1,18 @@
-﻿title: Dialogues
+﻿//Documentation for what it is possible to do: https://docs.yarnspinner.dev/write-yarn-scripts/scripting-fundamentals
+title: Variables
 ---
-This is an example of a Yarn Spinner script. Write your dialogue here!
+<<declare $emotion = "Neutral">>
+===
+
+title: Start
+---
+Meow: Bonjour voyageur ! Bienvenue dans notre monde.
+Meow: Comment se passe ta journée ?
+
+-> Très bien, merci !
+    <<set $emotion = "Happy">>
+    Meow: Oh, c'est super à entendre !
+-> Bof, assez fatigante.
+    <<set $emotion = "Tired">>
+    Meow: Oh zut, j'espère que ça va aller.
 ===
