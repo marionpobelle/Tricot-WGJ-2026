@@ -2816,7 +2816,7 @@ RectTransform:
   m_GameObject: {fileID: 595895389}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.777, y: 0.777, z: 0.777}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1925131842}
@@ -2825,7 +2825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: -80}
+  m_AnchoredPosition: {x: -296, y: 24.512}
   m_SizeDelta: {x: 350, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595895391
@@ -3205,10 +3205,6 @@ PrefabInstance:
     - target: {fileID: 5303330881260467929, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
       propertyPath: m_Name
       value: === ENVIRONMENT ===
-      objectReference: {fileID: 0}
-    - target: {fileID: 5303330881260467929, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5782669276109464308, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6425,14 +6421,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3254902}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae8ad166ea8c2d445b50dedf6d785111, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b1422cf339c57c468e0e23f84dd252e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7015,13 +7011,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameHandler
   _transition: {fileID: 11400000, guid: b577ec7af0d48c34a9d31ce17f830a8d, type: 2}
   _introLoadDelay: 0.25
-  _neutralColor: {r: 0.91372555, g: 0.7568628, b: 0.56078434, a: 1}
-  _anxietyColor: {r: 0.68235296, g: 0.65882355, b: 0.77647066, a: 1}
-  _reassuranceColor: {r: 0.85098046, g: 1, b: 0.7568628, a: 1}
-  _angerColor: {r: 1, g: 0.5176471, b: 0.4156863, a: 1}
-  _humorColor: {r: 1, g: 0.73333335, b: 0.4039216, a: 1}
-  _sadnessColor: {r: 0.7058824, g: 0.85098046, b: 0.909804, a: 1}
-  _joyColor: {r: 1, g: 0.9058824, b: 0.50980395, a: 1}
+  _neutralColor: {r: 0.85490197, g: 0.7372549, b: 0.64705884, a: 1}
+  _anxietyColor: {r: 0.8, g: 0.7058824, b: 0.83137256, a: 1}
+  _reassuranceColor: {r: 0.78431374, g: 1, b: 0.6784314, a: 1}
+  _angerColor: {r: 0.80784315, g: 0.41960785, b: 0.47058824, a: 1}
+  _humorColor: {r: 1, g: 0.72156864, b: 0.44313726, a: 1}
+  _sadnessColor: {r: 0.7372549, g: 0.8, b: 0.94509804, a: 1}
+  _joyColor: {r: 1, g: 0.8901961, b: 0.5882353, a: 1}
   _knitMaxAmount: 13
   _knitcurrentAmount: 0
   _sceneToLoad: Menu
