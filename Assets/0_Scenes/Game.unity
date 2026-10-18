@@ -8443,10 +8443,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 300f413a412c1f742ba6f086ef9e9c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueHandler
-  _initialWaitTime: 4
+  _initialWaitTime: 3.5
   _minWaitTime: 4.5
-  _maxWaitTime: 6.5
-  _dialogueWaitTime: 20
+  _maxWaitTime: 5.5
+  _dialogueWaitTime: 17
   _highFill: {r: 0.6413452, g: 0.8792453, b: 0.3500391, a: 1}
   _midFill: {r: 1, g: 0.9502477, b: 0.4433962, a: 1}
   _lowFill: {r: 1, g: 0.47126728, b: 0.34528297, a: 1}
