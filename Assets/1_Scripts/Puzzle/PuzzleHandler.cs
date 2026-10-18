@@ -148,7 +148,7 @@ public class PuzzleHandler : MonoBehaviour
                 _pointsLine3[i].InitPoint(stat);
                 if (stat == PointStatus.Start)
                 {
-                    _playerPoint = _pointsLine1[i];
+                    _playerPoint = _pointsLine3[i];
                 }
             }
             for (int i = 0; i < _pointsLine4.Count; i++)
