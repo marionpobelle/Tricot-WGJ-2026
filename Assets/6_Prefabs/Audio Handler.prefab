@@ -44,4 +44,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d99c39496fd6040843d0c7c194f991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioHandler
-  sounds: []
+  sounds:
+  - name: Music
+    clip: {fileID: 8300000, guid: 139ba43d4a0714f459856fb421d3f082, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: SFX_Dialogue_Appear
+    clip: {fileID: 8300000, guid: 380df0d09ad588a4a8f3eb8c2006e3ed, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Dialogue_Continue
+    clip: {fileID: 8300000, guid: ee5a7ab589fafa3489a2217b774ca42b, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Failure
+    clip: {fileID: 8300000, guid: f74e7cfecab6dc44c943e601a35711d2, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Move1
+    clip: {fileID: 8300000, guid: 0fbb5ebd4c74aa04da4e3df8b87627f1, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Move2
+    clip: {fileID: 8300000, guid: 18e47979933889143b0addb3cb809d4a, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Move3
+    clip: {fileID: 8300000, guid: c9acd02d3e96c4c408c464ec9828873b, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Move4
+    clip: {fileID: 8300000, guid: aed381ebf01ac25498d48299540ae675, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Popup_Appear
+    clip: {fileID: 8300000, guid: b4ca7ae4cd8cea14c8cc8d0755e58dc9, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SFX_Validation
+    clip: {fileID: 8300000, guid: 74895de843ead614c90a568ba9d6641f, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

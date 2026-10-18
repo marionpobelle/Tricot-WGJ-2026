@@ -18,12 +18,13 @@ public class MenuHandler : MonoBehaviour
     private void Start()
     {
         ResetToDefault();
+        AudioHandler.Instance.Play("Music");
     }
 
     private void ResetToDefault()
     {
         _keyPressed = false;
-        //AudioHandler.Instance.Play("");
+        AudioHandler.Instance.Play("Music");
     }
 
     private void Update()
@@ -32,6 +33,7 @@ public class MenuHandler : MonoBehaviour
         {
             if (TransitionManager.Instance() != null && _keyPressed == false)
             {
+                AudioHandler.Instance.PlayOneShot("SFX_Validation");
                 TransitionManager.Instance().Transition(_sceneToLoad, _transition, _introLoadDelay);
             }
             _keyPressed = true;
