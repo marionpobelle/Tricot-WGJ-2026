@@ -29,7 +29,7 @@ Claire: Shit, I forgot I had to exercise tonight. It’s been like... two weeks?
 <<wait 0.3>>
 -> It's fine. I'll do it later...
 	<<set $emotion = "reassurance">>
--> Fuck.
+-> Fuck. 
     <<set $emotion = "anxiety">>
     Claire: I’m so bad at actually sticking to a schedule. 
     <<wait 0.3>>
@@ -76,7 +76,7 @@ Claire: I'll just buy something tomorrow. If I have time.
 <<wait 0.3>>
 -> Damn, I'll never get a proper break, will I?
     <<set $emotion = "anger">>
-    Claire: Ok... One day at a time, Claire.
+    Claire: I'm just so sick of always rushing around.
     <<set $emotion = "reassurance">>
         -> Breathe. 
 -> Oh! Maybe we could check out the new Korean restaurant?
