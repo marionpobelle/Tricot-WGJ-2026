@@ -20,11 +20,21 @@ public class PuzzleHandler : MonoBehaviour
 
     [SerializeField] private CanvasGroup _puzzleGroup;
 
+    [SerializeField] private Animator _rightHandAnimator;
+
+    [SerializeField] private SpriteRenderer _knitUpSprite;
+    [SerializeField] private SpriteRenderer _knitDownSprite;
+    [SerializeField] private List<SpriteRenderer> _knitStripeSprites = new List<SpriteRenderer>();
+
+    [SerializeField] private CanvasGroup _tutoGroup;
+
     private InputSystem_Actions _inputs;
 
     private PuzzleSO _currentPuzzle;
 
     private PointPrefab _playerPoint;
+
+    private int _puzzleIndex;
 
     public static PuzzleHandler Instance;
 
@@ -42,10 +52,18 @@ public class PuzzleHandler : MonoBehaviour
 
     private void Start()
     {
+
         _inputs = new InputSystem_Actions();
         _puzzleGroup.alpha = 0f;
+        _puzzleIndex = 0;
+
+    }
+
+    public void StartPuzzles()
+    {
         InitNewPuzzle();
         EnablePuzzleInputs();
+        _tutoGroup.DOFade(1, 1);
     }
 
     private void OnDestroy()
@@ -55,12 +73,18 @@ public class PuzzleHandler : MonoBehaviour
 
     public void InitNewPuzzle()
     {
+        if(_puzzleIndex == 1)
+        {
+            _tutoGroup.DOFade(0, 1);
+            DialogueHandler.Instance.StartDialogues();
+        }
         if(_availablePuzzles.Count <= 0)
         {
             Debug.LogError("No puzzle found in puzzleSO list!");
             return;
         }
-        _currentPuzzle = _availablePuzzles[UnityEngine.Random.Range(0, _availablePuzzles.Count)];
+        _currentPuzzle = _availablePuzzles[_puzzleIndex];
+        _puzzleIndex++;
         SetUpPuzzle();
     }
 
@@ -138,6 +162,7 @@ public class PuzzleHandler : MonoBehaviour
     public void CheckPuzzleSuccess()
     {
         bool currentlyValid = true;
+        DisablePuzzleInputs();
         for (int i = 0; i < _pointsLine1.Count; i++)
         {
             if (_pointsLine1[i].IsValid != true) currentlyValid = false;
@@ -158,9 +183,15 @@ public class PuzzleHandler : MonoBehaviour
         if(currentlyValid == true && _playerPoint.CurrentStatus == PointStatus.End)
         {
             Debug.Log("Finished puzzle!");
+            _rightHandAnimator.Play("Right_hand_anim", 0, 0);
+            UpdateStripesColors(GameHandler.Instance.CurrentEmotion);
             InitNewPuzzle();
             GameHandler.Instance.IncrementKnitAmount();
             //TO DO: les anims et tout
+        }
+        else
+        {
+            EnablePuzzleInputs();
         }
     }
 
@@ -243,5 +274,45 @@ public class PuzzleHandler : MonoBehaviour
     private void OnReset(InputAction.CallbackContext context)
     {
         SetUpPuzzle();
+    }
+
+    public void UpdateKnitUpColor()
+    {
+        _knitUpSprite.color = GameHandler.Instance.CurrentEmotion;
+    }
+
+    public void UpdateWholeKnitColor()
+    {
+        _knitUpSprite.color = GameHandler.Instance.CurrentEmotion;
+        _knitDownSprite.color = GameHandler.Instance.CurrentEmotion;
+        for(int i = 0; i < _knitStripeSprites.Count; i++)
+        {
+            _knitStripeSprites[i].color = GameHandler.Instance.CurrentEmotion;
+        }
+    }
+
+    private void UpdateKnitStripeColor(Color color, int index)
+    {
+        if(_knitStripeSprites.Count == 0)
+        {
+            Debug.LogError("Strip list is empty!");
+            return;
+        }
+        if(index >= _knitStripeSprites.Count || index < 0)
+        {
+            Debug.LogError("Index isn't within sprie list range");
+            return;
+        }
+        _knitStripeSprites[index].color = color;
+    }
+
+    public void UpdateStripesColors(Color color)
+    {
+        for(int i = _knitStripeSprites.Count - 1; i > 0; i--)
+        {
+            UpdateKnitStripeColor(_knitStripeSprites[i - 1].color, i);
+        }
+        _knitStripeSprites[0].color = color;
+        _knitDownSprite.color = _knitStripeSprites[_knitStripeSprites.Count - 1].color;
     }
 }
