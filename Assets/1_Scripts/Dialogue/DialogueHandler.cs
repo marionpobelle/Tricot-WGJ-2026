@@ -5,6 +5,7 @@ using Yarn.Unity;
 using Sirenix.OdinInspector;
 using UnityEngine.UI;
 using DG.Tweening;
+using Yarn;
 
 public class DialogueHandler : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class DialogueHandler : MonoBehaviour
     [SerializeField] private float _minWaitTime = 4f;
     [SerializeField] private float _maxWaitTime = 10f;
     [SerializeField] private float _dialogueWaitTime = 8f;
+
+    [SerializeField] private Color _highFill;
+    [SerializeField] private Color _midFill;
+    [SerializeField] private Color _lowFill;
 
     [Title("REFERENCES")]
     public List<string> AvailableNodeTitles = new List<string>();
@@ -49,6 +54,25 @@ public class DialogueHandler : MonoBehaviour
         DialogueRunner.onDialogueComplete.RemoveListener(OnDialogueClosed);
     }
 
+    private void Update()
+    {
+        if(TimerFillGroup.alpha != 0)
+        {
+            if (TimerFillImage.fillAmount > 0.5f)
+            {
+                TimerFillImage.color = _highFill;
+            }
+            else if (TimerFillImage.fillAmount > 0.25f && TimerFillImage.fillAmount <= 0.5f)
+            {
+                TimerFillImage.color = _midFill;
+            }
+            else
+            {
+                TimerFillImage.color = _lowFill;
+            }
+        }
+    }
+
     private void GetAllDialogueNodes()
     {
         IEnumerable<string> NodeNames = DialogueRunner.Dialogue.NodeNames;
@@ -80,6 +104,7 @@ public class DialogueHandler : MonoBehaviour
             dialogueToCall = GetDialogue();
             DialogueRunner.StartDialogue(dialogueToCall);
             TimerFillImage.fillAmount = 1;
+            TimerFillImage.color = _highFill;
             TimerFillGroup.DOFade(1, 0.5f);
             TimerFillImage.DOFillAmount(0, _dialogueWaitTime);
             yield return new WaitForSeconds(_dialogueWaitTime);
@@ -89,15 +114,30 @@ public class DialogueHandler : MonoBehaviour
                 TimerFillGroup.DOFade(0, 0.5f);
                 PopupHandler.Instance.SpawnPopup(dialogueToCall);
             }
-            yield return new WaitForSeconds(UnityEngine.Random.Range(_minWaitTime, _maxWaitTime));
+            else
+            {
+
+            }
+            if(AvailableNodeTitles.Count > 0)
+            {
+                yield return new WaitForSeconds(UnityEngine.Random.Range(_minWaitTime, _maxWaitTime));
+            }
         }
-        //TO DO: No more dialogue, texte affiche a l'ecran, on peut cliquer sur un bouton pour etre renvoyer au main menu
+        GameHandler.Instance.SetNoDialogue(true);
         Debug.Log("No more dialogue to be played, end of coroutine!");
+    }
+
+    public void TerminateDialogueCoroutine()
+    {
+        StopCoroutine(_dialoguesCoroutine);
     }
 
     private void OnDialogueClosed()
     {
         TimerFillGroup.alpha = 0;
+        string currentEmotion = "";
+        DialogueRunner.VariableStorage.TryGetValue("$emotion", out currentEmotion);
+        GameHandler.Instance.SwitchCurrentEmotion(currentEmotion);
     }
 
     #region Test
