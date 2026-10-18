@@ -53,7 +53,7 @@ color: yellow
 ---
 Claire: God, just stop thinking about stuff! How does anyone find knitting relaxing? 
 <<wait 0.3>>
--> It's not like I'm really able to make anything particularly pretty anyway…
+-> I'm really not the most talented...
     <<set $emotion = "sadness">>
 -> They don't. They just pretend so we all feel bad, duh.
     <<set $emotion = "humor">>
