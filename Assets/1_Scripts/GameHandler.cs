@@ -54,6 +54,7 @@ public class GameHandler : MonoBehaviour
         _noDialogueLeft = false;
         _unfocusedEndGroup.alpha = 0f;
         SwitchCurrentEmotion("neutral");
+        PuzzleHandler.Instance.UpdateWholeKnitColor();
         AllowInputs = true;
     }
 
@@ -114,6 +115,7 @@ public class GameHandler : MonoBehaviour
                 break;
         }
         KnitColors.Add(CurrentEmotion);
+        PuzzleHandler.Instance.UpdateKnitUpColor();
     }
 
     public void IncrementKnitAmount()
