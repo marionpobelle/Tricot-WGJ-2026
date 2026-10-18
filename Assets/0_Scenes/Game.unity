@@ -7013,7 +7013,7 @@ MonoBehaviour:
   _introLoadDelay: 0.25
   _neutralColor: {r: 0.85490197, g: 0.7372549, b: 0.64705884, a: 1}
   _anxietyColor: {r: 0.8, g: 0.7058824, b: 0.83137256, a: 1}
-  _reassuranceColor: {r: 0.78431374, g: 1, b: 0.6784314, a: 1}
+  _reassuranceColor: {r: 0.6431373, g: 0.8039216, b: 0.6862745, a: 1}
   _angerColor: {r: 0.80784315, g: 0.41960785, b: 0.47058824, a: 1}
   _humorColor: {r: 1, g: 0.72156864, b: 0.44313726, a: 1}
   _sadnessColor: {r: 0.7372549, g: 0.8, b: 0.94509804, a: 1}
