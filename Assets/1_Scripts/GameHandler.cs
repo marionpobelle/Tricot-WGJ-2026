@@ -4,6 +4,7 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameHandler : MonoBehaviour
 {
@@ -24,10 +25,15 @@ public class GameHandler : MonoBehaviour
 
     [Title("REFERENCES")]
     [SerializeField] private string _sceneToLoad;
-    [SerializeField] private CanvasGroup _unfocusedEndGroup;
+    [SerializeField] private CanvasGroup _failEndGroup;
+    [SerializeField] private CanvasGroup _successEndGroup;
+
+    [SerializeField] private List<Image> _successScarf;
+    [SerializeField] private List<Image> _failureScarf;
 
     private bool _keyPressed = false;
     private bool _noDialogueLeft;
+    private bool _finishedKnitting;
 
     public Color CurrentEmotion;
     public List<Color> KnitColors = new List<Color>();
@@ -52,7 +58,9 @@ public class GameHandler : MonoBehaviour
     {
         _knitcurrentAmount = 0;
         _noDialogueLeft = false;
-        _unfocusedEndGroup.alpha = 0f;
+        _finishedKnitting = false;
+        _failEndGroup.alpha = 0f;
+        _successEndGroup.alpha = 0f;
         SwitchCurrentEmotion("neutral");
         PuzzleHandler.Instance.UpdateWholeKnitColor();
         AllowInputs = true;
@@ -60,7 +68,7 @@ public class GameHandler : MonoBehaviour
 
     private void Update()
     {
-        if (!_keyPressed && Input.anyKeyDown && _noDialogueLeft)
+        if (!_keyPressed && Input.GetKeyDown(KeyCode.E) && (_noDialogueLeft || _finishedKnitting))
         {
             if (TransitionManager.Instance() != null && _keyPressed == false)
             {
@@ -76,13 +84,41 @@ public class GameHandler : MonoBehaviour
         if (_noDialogueLeft == true)
         {
             AllowInputs = false;
-            PlayUnfocusedEnd();
+            PlayFailEnd();
         }
     }
 
-    private void PlayUnfocusedEnd()
+    private void PlayFailEnd()
     {
-        _unfocusedEndGroup.DOFade(1, 1);
+        if(KnitColors.Count > 5)
+        {
+            KnitColors.Reverse();
+            for (int i = 0; i < KnitColors.Count; i++)
+            {
+                _failureScarf[i].color = KnitColors[i];
+            }
+        }
+        else
+        {
+            for (int i = 0; i < _failureScarf.Count; i++)
+            {
+                _failureScarf[i].color = _neutralColor;
+            }
+        }
+
+        _failEndGroup.DOFade(1, 1);
+    }
+    private void PlaySuccessEnd()
+    {
+        if (KnitColors.Count > 0)
+        {
+            KnitColors.Reverse();
+            for (int i = 0; i < KnitColors.Count; i++)
+            {
+                _successScarf[i].color = KnitColors[i];
+            }
+        }
+        _successEndGroup.DOFade(1, 1);
     }
 
     public void SwitchCurrentEmotion(string emotion)
@@ -114,13 +150,13 @@ public class GameHandler : MonoBehaviour
                 CurrentEmotion = _neutralColor;
                 break;
         }
-        KnitColors.Add(CurrentEmotion);
         PuzzleHandler.Instance.UpdateKnitUpColor();
     }
 
     public void IncrementKnitAmount()
     {
         _knitcurrentAmount++;
+        KnitColors.Add(CurrentEmotion);
         CheckForFinishedKnit();
     }
 
@@ -130,6 +166,8 @@ public class GameHandler : MonoBehaviour
         {
             DialogueHandler.Instance.TerminateDialogueCoroutine();
             AllowInputs = false;
+            PlaySuccessEnd();
+            _finishedKnitting = true;
             Debug.Log("Finished knitting!");
         }
     }

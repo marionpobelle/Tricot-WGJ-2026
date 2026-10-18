@@ -34,7 +34,7 @@ public class PopupHandler : MonoBehaviour
             Debug.LogError("Not enough popup positions or texts to display new popup!");
             return;
         }
-        Transform poptransform = _availablePopupPositions[UnityEngine.Random.Range(0, _availablePopupPositions.Count)];
+        Transform poptransform = _availablePopupPositions[0];
         _availablePopupPositions.RemoveAll(x => x == poptransform);
         PopupPrefab popup = Instantiate(_prefab, poptransform);
         PopText poptext = _availablePopTexts.Find(x => x.DialogueID == dialogueid);

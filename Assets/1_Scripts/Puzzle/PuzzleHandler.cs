@@ -78,7 +78,7 @@ public class PuzzleHandler : MonoBehaviour
             _tutoGroup.DOFade(0, 1);
             DialogueHandler.Instance.StartDialogues();
         }
-        if(_availablePuzzles.Count <= 0)
+        if(_puzzleIndex >= _availablePuzzles.Count)
         {
             Debug.LogError("No puzzle found in puzzleSO list!");
             return;

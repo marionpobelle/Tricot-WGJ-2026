@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: bae5737fe5dfc9c499d5e3e02970ac26
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 510699702998379494
+    second: colors_legend_0
+  - first:
+      213: 7066823022440439545
+    second: colors_legend_1
+  - first:
+      213: -2018942522491789242
+    second: colors_legend_2
+  - first:
+      213: -5118626415497403492
+    second: colors_legend_3
+  - first:
+      213: -1962185378188058713
+    second: colors_legend_4
+  - first:
+      213: -6032574738172648200
+    second: colors_legend_5
+  - first:
+      213: -380083570661927214
+    second: colors_legend_6
+  - first:
+      213: -8785457020628193480
+    second: colors_legend_7
+  - first:
+      213: -8867882058485808085
+    second: colors_legend_8
+  - first:
+      213: -8125790610845115680
+    second: colors_legend_9
+  - first:
+      213: -2020324624108695120
+    second: colors_legend_10
+  - first:
+      213: -6513702060284249626
+    second: colors_legend_11
+  - first:
+      213: -2443649161693702895
+    second: colors_legend_12
+  - first:
+      213: -2205896297636436183
+    second: colors_legend_13
+  - first:
+      213: 3908627100438951175
+    second: colors_legend_14
+  - first:
+      213: 1681650203461216921
+    second: colors_legend_15
+  - first:
+      213: 4634632294519924652
+    second: colors_legend_16
+  - first:
+      213: -7527664786577933262
+    second: colors_legend_17
+  - first:
+      213: -3571091777108585715
+    second: colors_legend_18
+  - first:
+      213: -5502470657738085910
+    second: colors_legend_19
+  - first:
+      213: -2530082846785837530
+    second: colors_legend_20
+  - first:
+      213: 453091840325500437
+    second: colors_legend_21
+  - first:
+      213: 813617762220698228
+    second: colors_legend_22
+  - first:
+      213: -3913266162404987118
+    second: colors_legend_23
+  - first:
+      213: -7833020770578650544
+    second: colors_legend_24
+  - first:
+      213: 7306282875048260079
+    second: colors_legend_25
+  - first:
+      213: 5055549041404484439
+    second: colors_legend_26
+  - first:
+      213: -8873234513117147022
+    second: colors_legend_27
+  - first:
+      213: -419057315044352861
+    second: colors_legend_28
+  - first:
+      213: 65221776155636583
+    second: colors_legend_29
+  - first:
+      213: -1302786356465668174
+    second: colors_legend_30
+  - first:
+      213: -3015769399144614886
+    second: colors_legend_31
+  - first:
+      213: 1036918822812006015
+    second: colors_legend_32
+  - first:
+      213: 7745550948569500680
+    second: colors_legend_33
+  - first:
+      213: -217467644658052918
+    second: colors_legend_34
+  - first:
+      213: -6073234072619931272
+    second: colors_legend_35
+  - first:
+      213: 6817721895745594684
+    second: colors_legend_36
+  - first:
+      213: 1533903860211997195
+    second: colors_legend_37
+  - first:
+      213: -8872463237822049013
+    second: colors_legend_38
+  - first:
+      213: -3079641089871718030
+    second: colors_legend_39
+  - first:
+      213: 3598822006198325915
+    second: colors_legend_40
+  - first:
+      213: 4861126436597534810
+    second: colors_legend_41
+  - first:
+      213: 2954239042242515094
+    second: colors_legend_42
+  - first:
+      213: -1380995933376623171
+    second: colors_legend_43
+  - first:
+      213: 7828255739004160174
+    second: colors_legend_44
+  - first:
+      213: -2052290368740072131
+    second: colors_legend_45
+  - first:
+      213: -7759688172509443727
+    second: colors_legend_46
+  - first:
+      213: -2441717112597397903
+    second: colors_legend_47
+  - first:
+      213: -5937802954051805247
+    second: colors_legend_48
+  - first:
+      213: -6109608527278817093
+    second: colors_legend_49
+  - first:
+      213: 8756413329127707334
+    second: colors_legend_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: colors_legend_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebad109cae561700800000000000000
+      internalID: 510699702998379494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 13
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe5d17e816621260800000000000000
+      internalID: 7066823022440439545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 11
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64022fcf8764bf3e0800000000000000
+      internalID: -2018942522491789242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 13
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93a85e056cf6f8b0800000000000000
+      internalID: -5118626415497403492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 12
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af92ad6bcae4c4e0800000000000000
+      internalID: -1962185378188058713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 11
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f46932dc3df74ca0800000000000000
+      internalID: -6032574738172648200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6dbb9910ca9baf0800000000000000
+      internalID: -380083570661927214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 13
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83faef71369c31680800000000000000
+      internalID: -8785457020628193480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_8
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24c4e97044fee480800000000000000
+      internalID: -8867882058485808085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_9
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 12
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea5f51ed746b3f80800000000000000
+      internalID: -8125790610845115680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 13
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1d601657d56f3e0800000000000000
+      internalID: -2020324624108695120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_11
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9f60cbc7eaa95a0800000000000000
+      internalID: -6513702060284249626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_12
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115d091d80a661ed0800000000000000
+      internalID: -2443649161693702895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_13
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927e70031051361e0800000000000000
+      internalID: -2205896297636436183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 13
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705f02993ab3e3630800000000000000
+      internalID: 3908627100438951175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_15
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ae4c543fb665710800000000000000
+      internalID: 1681650203461216921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_16
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 13
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7e96b3485815040800000000000000
+      internalID: 4634632294519924652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_17
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 11
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c3ec782cc588790800000000000000
+      internalID: -7527664786577933262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_18
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 0
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03df1df2fee07ec0800000000000000
+      internalID: -3571091777108585715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_19
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9e282171c43a3b0800000000000000
+      internalID: -5502470657738085910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_20
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 13
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62665094e0753ecd0800000000000000
+      internalID: -2530082846785837530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_21
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 10
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51eba31d0a4b94600800000000000000
+      internalID: 453091840325500437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_22
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 11
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47aec144b0d8a4b00800000000000000
+      internalID: 813617762220698228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_23
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 11
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f6b4e982941b9c0800000000000000
+      internalID: -3913266162404987118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_24
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 0
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a276b3c158b4390800000000000000
+      internalID: -7833020770578650544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_25
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe175c38091256560800000000000000
+      internalID: 7306282875048260079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_26
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 13
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b1b75511be82640800000000000000
+      internalID: 5055549041404484439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 11
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2709ae40930fbd480800000000000000
+      internalID: -8873234513117147022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_28
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 12
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac904c97953f2af0800000000000000
+      internalID: -419057315044352861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_29
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 11
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763706f1cd6b7e000800000000000000
+      internalID: 65221776155636583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_30
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 12
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf63a416b29bede0800000000000000
+      internalID: -1302786356465668174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_31
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14fd7fa5b5d526d0800000000000000
+      internalID: -3015769399144614886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_32
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 0
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7630aeec20e36e00800000000000000
+      internalID: 1036918822812006015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_33
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 12
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ccc2fcc89bd7b60800000000000000
+      internalID: 7745550948569500680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_34
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0140254566bfcf0800000000000000
+      internalID: -217467644658052918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_35
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879a0bfc9c987bba0800000000000000
+      internalID: -6073234072619931272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_36
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 13
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35a15d31f96d9e50800000000000000
+      internalID: 6817721895745594684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_37
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 11
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a59831f65894510800000000000000
+      internalID: 1533903860211997195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_38
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 12
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0597ea81bdaed480800000000000000
+      internalID: -8872463237822049013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_39
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 0
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279df72debae245d0800000000000000
+      internalID: -3079641089871718030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_40
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 11
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b925f491c8591f130800000000000000
+      internalID: 3598822006198325915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_41
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 11
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5018ad1db0367340800000000000000
+      internalID: 4861126436597534810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_42
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6909476b1c09ff820800000000000000
+      internalID: 2954239042242515094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_43
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 12
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdc3d2f387b5dce0800000000000000
+      internalID: -1380995933376623171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_44
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 12
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea881466e1d83ac60800000000000000
+      internalID: 7828255739004160174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_45
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 13
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35ea4b78ccc483e0800000000000000
+      internalID: -2052290368740072131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_46
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 11
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17946cd38bc005490800000000000000
+      internalID: -7759688172509443727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_47
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 11
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17eb3ad09374d1ed0800000000000000
+      internalID: -2441717112597397903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_48
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 13
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf1a715cafa89da0800000000000000
+      internalID: -5937802954051805247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_49
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 12
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb049de1a6f463ba0800000000000000
+      internalID: -6109608527278817093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colors_legend_50
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 11
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c217258787058970800000000000000
+      internalID: 8756413329127707334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      colors_legend_0: 510699702998379494
+      colors_legend_1: 7066823022440439545
+      colors_legend_10: -2020324624108695120
+      colors_legend_11: -6513702060284249626
+      colors_legend_12: -2443649161693702895
+      colors_legend_13: -2205896297636436183
+      colors_legend_14: 3908627100438951175
+      colors_legend_15: 1681650203461216921
+      colors_legend_16: 4634632294519924652
+      colors_legend_17: -7527664786577933262
+      colors_legend_18: -3571091777108585715
+      colors_legend_19: -5502470657738085910
+      colors_legend_2: -2018942522491789242
+      colors_legend_20: -2530082846785837530
+      colors_legend_21: 453091840325500437
+      colors_legend_22: 813617762220698228
+      colors_legend_23: -3913266162404987118
+      colors_legend_24: -7833020770578650544
+      colors_legend_25: 7306282875048260079
+      colors_legend_26: 5055549041404484439
+      colors_legend_27: -8873234513117147022
+      colors_legend_28: -419057315044352861
+      colors_legend_29: 65221776155636583
+      colors_legend_3: -5118626415497403492
+      colors_legend_30: -1302786356465668174
+      colors_legend_31: -3015769399144614886
+      colors_legend_32: 1036918822812006015
+      colors_legend_33: 7745550948569500680
+      colors_legend_34: -217467644658052918
+      colors_legend_35: -6073234072619931272
+      colors_legend_36: 6817721895745594684
+      colors_legend_37: 1533903860211997195
+      colors_legend_38: -8872463237822049013
+      colors_legend_39: -3079641089871718030
+      colors_legend_4: -1962185378188058713
+      colors_legend_40: 3598822006198325915
+      colors_legend_41: 4861126436597534810
+      colors_legend_42: 2954239042242515094
+      colors_legend_43: -1380995933376623171
+      colors_legend_44: 7828255739004160174
+      colors_legend_45: -2052290368740072131
+      colors_legend_46: -7759688172509443727
+      colors_legend_47: -2441717112597397903
+      colors_legend_48: -5937802954051805247
+      colors_legend_49: -6109608527278817093
+      colors_legend_5: -6032574738172648200
+      colors_legend_50: 8756413329127707334
+      colors_legend_6: -380083570661927214
+      colors_legend_7: -8785457020628193480
+      colors_legend_8: -8867882058485808085
+      colors_legend_9: -8125790610845115680
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
