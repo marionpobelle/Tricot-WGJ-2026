@@ -63,7 +63,6 @@ public class GameHandler : MonoBehaviour
         _successEndGroup.alpha = 0f;
         SwitchCurrentEmotion("neutral");
         PuzzleHandler.Instance.UpdateWholeKnitColor();
-        AllowInputs = true;
     }
 
     private void Update()

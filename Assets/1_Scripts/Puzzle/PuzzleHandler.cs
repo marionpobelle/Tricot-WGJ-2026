@@ -3,9 +3,11 @@ using EasyTransition;
 using NUnit.Framework;
 using Sirenix.OdinInspector;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PuzzleHandler : MonoBehaviour
 {
@@ -18,15 +20,25 @@ public class PuzzleHandler : MonoBehaviour
     [SerializeField] private List<PointPrefab> _pointsLine3 = new List<PointPrefab>();
     [SerializeField] private List<PointPrefab> _pointsLine4 = new List<PointPrefab>();
 
+    [SerializeField] private CanvasGroup _iconGroup;
+    [SerializeField] private Image _iconImg;
+    [SerializeField] private Sprite _iconSuccess;
+    [SerializeField] private Sprite _iconFailure;
+
     [SerializeField] private CanvasGroup _puzzleGroup;
 
     [SerializeField] private Animator _rightHandAnimator;
 
+    [SerializeField] private List<SpriteRenderer> _knitHandsSprites;
     [SerializeField] private SpriteRenderer _knitUpSprite;
     [SerializeField] private SpriteRenderer _knitDownSprite;
     [SerializeField] private List<SpriteRenderer> _knitStripeSprites = new List<SpriteRenderer>();
 
-    [SerializeField] private CanvasGroup _tutoGroup;
+    [SerializeField] private CanvasGroup _leftGroup;
+    [SerializeField] private CanvasGroup _rightGroup;
+    [SerializeField] private CanvasGroup _upGroup;
+    [SerializeField] private CanvasGroup _downGroup;
+    [SerializeField] private CanvasGroup _resetGroup;
 
     private InputSystem_Actions _inputs;
 
@@ -56,6 +68,12 @@ public class PuzzleHandler : MonoBehaviour
         _inputs = new InputSystem_Actions();
         _puzzleGroup.alpha = 0f;
         _puzzleIndex = 0;
+        _leftGroup.alpha = 0f;
+        _rightGroup.alpha = 0f;
+        _upGroup.alpha = 0f;
+        _downGroup.alpha = 0f;
+        _resetGroup.alpha = 0f;
+        _iconGroup.alpha = 0f;
 
     }
 
@@ -63,7 +81,11 @@ public class PuzzleHandler : MonoBehaviour
     {
         InitNewPuzzle();
         EnablePuzzleInputs();
-        _tutoGroup.DOFade(1, 1);
+        _leftGroup.DOFade(1, 1);
+        _rightGroup.DOFade(1, 1);
+        _upGroup.DOFade(1, 1);
+        _downGroup.DOFade(1, 1);
+        _resetGroup.DOFade(1, 1);
     }
 
     private void OnDestroy()
@@ -75,7 +97,10 @@ public class PuzzleHandler : MonoBehaviour
     {
         if(_puzzleIndex == 1)
         {
-            _tutoGroup.DOFade(0, 1);
+            _leftGroup.DOFade(0, 1);
+            _rightGroup.DOFade(0, 1);
+            _upGroup.DOFade(0, 1);
+            _downGroup.DOFade(0, 1);
             DialogueHandler.Instance.StartDialogues();
         }
         if(_puzzleIndex >= _availablePuzzles.Count)
@@ -97,46 +122,49 @@ public class PuzzleHandler : MonoBehaviour
         }
         HideAllLines();
         DisablePuzzleInputs();
-        _puzzleGroup.DOFade(0, 0.5f);
-        for (int i = 0; i < _pointsLine1.Count; i++)
+        _puzzleGroup.DOFade(0, 0.8f).OnComplete(() =>
         {
-            PointStatus stat = _currentPuzzle.PuzzleLine1[i];
-            _pointsLine1[i].InitPoint(stat);
-            if(stat == PointStatus.Start)
+            for (int i = 0; i < _pointsLine1.Count; i++)
             {
-                _playerPoint = _pointsLine1[i];
+                PointStatus stat = _currentPuzzle.PuzzleLine1[i];
+                _pointsLine1[i].InitPoint(stat);
+                if (stat == PointStatus.Start)
+                {
+                    _playerPoint = _pointsLine1[i];
+                }
             }
-        }
-        for (int i = 0; i < _pointsLine2.Count; i++)
-        {
-            PointStatus stat = _currentPuzzle.PuzzleLine2[i];
-            _pointsLine2[i].InitPoint(stat);
-            if (stat == PointStatus.Start)
+            for (int i = 0; i < _pointsLine2.Count; i++)
             {
-                _playerPoint = _pointsLine2[i];
+                PointStatus stat = _currentPuzzle.PuzzleLine2[i];
+                _pointsLine2[i].InitPoint(stat);
+                if (stat == PointStatus.Start)
+                {
+                    _playerPoint = _pointsLine2[i];
+                }
             }
-        }
-        for (int i = 0; i < _pointsLine3.Count; i++)
-        {
-            PointStatus stat = _currentPuzzle.PuzzleLine3[i];
-            _pointsLine3[i].InitPoint(stat);
-            if (stat == PointStatus.Start)
+            for (int i = 0; i < _pointsLine3.Count; i++)
             {
-                _playerPoint = _pointsLine1[i];
+                PointStatus stat = _currentPuzzle.PuzzleLine3[i];
+                _pointsLine3[i].InitPoint(stat);
+                if (stat == PointStatus.Start)
+                {
+                    _playerPoint = _pointsLine1[i];
+                }
             }
-        }
-        for (int i = 0; i < _pointsLine4.Count; i++)
-        {
-            PointStatus stat = _currentPuzzle.PuzzleLine4[i];
-            _pointsLine4[i].InitPoint(stat);
-            if (stat == PointStatus.Start)
+            for (int i = 0; i < _pointsLine4.Count; i++)
             {
-                _playerPoint = _pointsLine4[i];
+                PointStatus stat = _currentPuzzle.PuzzleLine4[i];
+                _pointsLine4[i].InitPoint(stat);
+                if (stat == PointStatus.Start)
+                {
+                    _playerPoint = _pointsLine4[i];
+                }
             }
-        }
-        HideAllLines();
-        _puzzleGroup.DOFade(1, 0.5f);
-        EnablePuzzleInputs();
+            HideAllLines();
+            _puzzleGroup.DOFade(1, 0.8f);
+            EnablePuzzleInputs();
+            GameHandler.Instance.AllowInputs = true;
+        });
     }
 
     private void HideAllLines()
@@ -184,11 +212,12 @@ public class PuzzleHandler : MonoBehaviour
         {
             Debug.Log("Finished puzzle!");
             _rightHandAnimator.Play("Right_hand_anim", 0, 0);
+            _iconImg.sprite = _iconSuccess;
+            StartCoroutine(FlashIcon());
             UpdateStripesColors(GameHandler.Instance.CurrentEmotion);
             AudioHandler.Instance.PlayOneShot("SFX_Validation");
             InitNewPuzzle();
             GameHandler.Instance.IncrementKnitAmount();
-            //TO DO: les anims et tout
         }
         else
         {
@@ -220,7 +249,16 @@ public class PuzzleHandler : MonoBehaviour
     private void FailPuzzle()
     {
         AudioHandler.Instance.PlayOneShot("SFX_Failure");
+        _iconImg.sprite = _iconFailure;
+        StartCoroutine(FlashIcon());
         SetUpPuzzle();
+    }
+
+    private IEnumerator FlashIcon()
+    {
+        _iconGroup.DOFade(1, 0.8f);
+        yield return new WaitForSeconds(0.5f);
+        _iconGroup.DOFade(0, 0.8f);
     }
 
     public void EnablePuzzleInputs()
@@ -311,11 +349,19 @@ public class PuzzleHandler : MonoBehaviour
     public void UpdateKnitUpColor()
     {
         _knitUpSprite.color = GameHandler.Instance.CurrentEmotion;
+        foreach (SpriteRenderer item in _knitHandsSprites)
+        {
+            item.color = GameHandler.Instance.CurrentEmotion;
+        }
     }
 
     public void UpdateWholeKnitColor()
     {
         _knitUpSprite.color = GameHandler.Instance.CurrentEmotion;
+        foreach(SpriteRenderer item in _knitHandsSprites)
+        {
+            item.color = GameHandler.Instance.CurrentEmotion;
+        }
         _knitDownSprite.color = GameHandler.Instance.CurrentEmotion;
         for(int i = 0; i < _knitStripeSprites.Count; i++)
         {
