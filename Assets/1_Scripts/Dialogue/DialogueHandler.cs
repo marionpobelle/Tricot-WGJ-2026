@@ -6,6 +6,7 @@ using Sirenix.OdinInspector;
 using UnityEngine.UI;
 using DG.Tweening;
 using Yarn;
+using UnityEngine.Audio;
 
 public class DialogueHandler : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class DialogueHandler : MonoBehaviour
     {
         GetAllDialogueNodes();
         DialogueRunner.onDialogueComplete.AddListener(OnDialogueClosed);
+        DialogueRunner.onDialogueStart.AddListener(OnDialogueStart);
     }
 
     public void StartDialogues()
@@ -74,6 +76,15 @@ public class DialogueHandler : MonoBehaviour
                 TimerFillImage.color = _lowFill;
             }
         }
+        if (Input.GetKeyDown(KeyCode.Space) && DialogueRunner.IsDialogueRunning)
+        {
+            PlayContinueSFX();
+        }
+    }
+
+    public void PlayContinueSFX()
+    {
+        AudioHandler.Instance.PlayOneShot("SFX_Dialogue_Continue");
     }
 
     private void GetAllDialogueNodes()
@@ -149,6 +160,11 @@ public class DialogueHandler : MonoBehaviour
             DialogueRunner.VariableStorage.TryGetValue("$emotion", out currentEmotion);
             GameHandler.Instance.SwitchCurrentEmotion(currentEmotion);
         }
+    }
+
+    private void OnDialogueStart()
+    {
+        AudioHandler.Instance.PlayOneShot("SFX_Dialogue_Appear");
     }
 
     #region Test

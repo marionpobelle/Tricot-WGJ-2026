@@ -23,6 +23,7 @@ public class PopupPrefab : MonoBehaviour
     {
         ChangePopText(newtext);
         _canvasGroup.DOFade(1, _fadeTime);
+        AudioHandler.Instance.PlayOneShot("SFX_Popup_Appear");
     }
 
     private void ChangePopText(string newtext)
