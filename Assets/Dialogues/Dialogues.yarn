@@ -131,14 +131,14 @@ Claire: Breathe. Why is my chest so tight?
 title: Dialogue_11
 color: yellow
 ---
-Claire: Knitting is actually a bit harder than I thought.
+Claire: Knitting is actually a little harder than I thought.
 <<wait 0.3>>
--> Maybe I should give up. 
+-> Maybe I should just give it up. 
     <<set $emotion = "anxiety">>
     Claire: Like I did with drawing... and pottery...
--> Girl, you really thought you could be an expert after 15 minutes?
-    <<set $emotion = "humor">>
-    Claire: chuckles. Yeah, right.
+-> Sweetie, did you really think you could become an expert in 15 minutes?
+    <<set $emotion = “humor”>>
+    Claire: (She giggles).   Yeah, right.
 ===
 title: Dialogue_12
 color: yellow
@@ -223,7 +223,7 @@ Claire: We should do coffee sometimes.
 title: Dialogue_19
 color: yellow
 ---
-Claire: Colette, you alright dear? (The cat purrs.)
+Claire: Colette, you're alright dear? (The cat purrs.)
 <<wait 0.3>>
 -> I wish I could lie in bed all day with you and feel... content. 
     <<set $emotion = "sadness">>
