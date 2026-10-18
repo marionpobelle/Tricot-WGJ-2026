@@ -5294,6 +5294,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 56528623ae722b54ab3c47349d021a0e, type: 2}
   - {fileID: 11400000, guid: 924c0200d7ec9164ab86140fa14c34e4, type: 2}
   - {fileID: 11400000, guid: f03fdaebeb351144296d2e0e5c6b404f, type: 2}
+  - {fileID: 11400000, guid: d4a859123e059fa44bae4a7c661f195a, type: 2}
+  - {fileID: 11400000, guid: 90a7ff609ee475c4487f377186249539, type: 2}
+  - {fileID: 11400000, guid: 2d2555ac9a9b7eb458c595200da19680, type: 2}
+  - {fileID: 11400000, guid: 5cfdaaab4c474464ca08b65eedb940e5, type: 2}
+  - {fileID: 11400000, guid: d6d43b97adfd497448f100dd74792811, type: 2}
+  - {fileID: 11400000, guid: 5c52505ee81f5314289183cc9383836c, type: 2}
+  - {fileID: 11400000, guid: 711fd3140985e0741a4027de81a922c7, type: 2}
   _pointsLine1:
   - {fileID: 467868687}
   - {fileID: 961376764}
@@ -8421,8 +8428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueHandler
   _initialWaitTime: 5
-  _minWaitTime: 6.5
-  _maxWaitTime: 8.5
+  _minWaitTime: 5
+  _maxWaitTime: 7.5
   _dialogueWaitTime: 21
   _highFill: {r: 0.6413452, g: 0.8792453, b: 0.3500391, a: 1}
   _midFill: {r: 1, g: 0.9502477, b: 0.4433962, a: 1}
