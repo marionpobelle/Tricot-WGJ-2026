@@ -185,6 +185,7 @@ public class PuzzleHandler : MonoBehaviour
             Debug.Log("Finished puzzle!");
             _rightHandAnimator.Play("Right_hand_anim", 0, 0);
             UpdateStripesColors(GameHandler.Instance.CurrentEmotion);
+            AudioHandler.Instance.PlayOneShot("SFX_Validation");
             InitNewPuzzle();
             GameHandler.Instance.IncrementKnitAmount();
             //TO DO: les anims et tout
@@ -193,6 +194,33 @@ public class PuzzleHandler : MonoBehaviour
         {
             EnablePuzzleInputs();
         }
+    }
+
+    private void PlayRandomMoveSFX()
+    {
+        int rand = UnityEngine.Random.Range(1, 5);
+        switch (rand) 
+        {
+            case 1:
+                AudioHandler.Instance.PlayOneShot("SFX_Move1");
+                break;
+            case 2:
+                AudioHandler.Instance.PlayOneShot("SFX_Move2");
+                break;
+            case 3:
+                AudioHandler.Instance.PlayOneShot("SFX_Move3");
+                break;
+            case 4:
+                AudioHandler.Instance.PlayOneShot("SFX_Move4");
+                break;
+        }
+
+    }
+
+    private void FailPuzzle()
+    {
+        AudioHandler.Instance.PlayOneShot("SFX_Failure");
+        SetUpPuzzle();
     }
 
     public void EnablePuzzleInputs()
@@ -225,6 +253,7 @@ public class PuzzleHandler : MonoBehaviour
             _playerPoint = _playerPoint.GetNeighborPoint(Direction.Up);
             _playerPoint.TogglePlayerAnim(true);
             _playerPoint.IsValid = true;
+            PlayRandomMoveSFX();
             CheckPuzzleSuccess();
         }
     }
@@ -239,6 +268,7 @@ public class PuzzleHandler : MonoBehaviour
             _playerPoint = _playerPoint.GetNeighborPoint(Direction.Down);
             _playerPoint.TogglePlayerAnim(true);
             _playerPoint.IsValid = true;
+            PlayRandomMoveSFX();
             CheckPuzzleSuccess();
         }
     }
@@ -253,6 +283,7 @@ public class PuzzleHandler : MonoBehaviour
             _playerPoint = _playerPoint.GetNeighborPoint(Direction.Left);
             _playerPoint.TogglePlayerAnim(true);
             _playerPoint.IsValid = true;
+            PlayRandomMoveSFX();
             CheckPuzzleSuccess();
         }
     }
@@ -267,13 +298,14 @@ public class PuzzleHandler : MonoBehaviour
             _playerPoint = _playerPoint.GetNeighborPoint(Direction.Right);
             _playerPoint.TogglePlayerAnim(true);
             _playerPoint.IsValid = true;
+            PlayRandomMoveSFX();
             CheckPuzzleSuccess();
         }
     }
 
     private void OnReset(InputAction.CallbackContext context)
     {
-        SetUpPuzzle();
+        FailPuzzle();
     }
 
     public void UpdateKnitUpColor()
