@@ -1,7 +1,6 @@
 ﻿title: Dialogues
 ---
 <<declare $emotion = "neutral">>
-<<jump Dialogue_1>>
 ===
 title: Dialogue_0
 color: blue
@@ -137,7 +136,7 @@ Claire: Knitting is actually a little harder than I thought.
     <<set $emotion = "anxiety">>
     Claire: Like I did with drawing... and pottery...
 -> Sweetie, did you really think you could become an expert in 15 minutes?
-    <<set $emotion = “humor”>>
+    <<set $emotion = "humor">>
     Claire: (She giggles).   Yeah, right.
 ===
 title: Dialogue_12
