@@ -109,7 +109,7 @@ public class GameHandler : MonoBehaviour
     }
     private void PlaySuccessEnd()
     {
-        if (KnitColors.Count > 0)
+        if (KnitColors.Count > 20)
         {
             KnitColors.Reverse();
             for (int i = 0; i < KnitColors.Count; i++)
