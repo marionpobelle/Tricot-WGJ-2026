@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2377,7 +2377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3535,7 +3535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3721,8 +3721,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283646793
-  m_fontColor: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+    rgba: 4293458431
+  m_fontColor: {r: 1, g: 0.9764706, b: 0.9098039, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3892,26 +3892,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 641517854729175382, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 641517854729175382, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 641517854729175382, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2879432765116471233, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 35.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4980165679180916883, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
-      propertyPath: m_Name
-      value: Knitting_stripe1
-      objectReference: {fileID: 0}
     - target: {fileID: 5303330881260467929, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
       propertyPath: m_Name
       value: === ENVIRONMENT ===
@@ -3955,10 +3935,6 @@ PrefabInstance:
     - target: {fileID: 5782669276109464308, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6935325827906647169, guid: 1a56f004fab88684c8e789a96fdb08d2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5118,8 +5094,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283646793
-  m_fontColor: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+    rgba: 4293458431
+  m_fontColor: {r: 1, g: 0.9764706, b: 0.9098039, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6100,7 +6076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6510,8 +6486,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283646793
-  m_fontColor: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+    rgba: 4293458431
+  m_fontColor: {r: 1, g: 0.9764706, b: 0.9098039, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6809,8 +6785,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283646793
-  m_fontColor: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+    rgba: 4293458431
+  m_fontColor: {r: 1, g: 0.9764706, b: 0.9098039, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9139,9 +9115,9 @@ MonoBehaviour:
   _minWaitTime: 11
   _maxWaitTime: 14
   _dialogueWaitTime: 13
-  _highFill: {r: 0.80810213, g: 1, b: 0.5707547, a: 1}
-  _midFill: {r: 1, g: 0.93778545, b: 0.2971698, a: 1}
-  _lowFill: {r: 1, g: 0.4009434, b: 0.4009434, a: 1}
+  _highFill: {r: 0.6413452, g: 0.8792453, b: 0.3500391, a: 1}
+  _midFill: {r: 1, g: 0.9502477, b: 0.4433962, a: 1}
+  _lowFill: {r: 1, g: 0.47126728, b: 0.34528297, a: 1}
   AvailableNodeTitles: []
   DialogueRunner: {fileID: 36857455}
   TimerFillGroup: {fileID: 620692443}
@@ -9227,8 +9203,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283646793
-  m_fontColor: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+    rgba: 4293458431
+  m_fontColor: {r: 1, g: 0.9764706, b: 0.9098039, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9364,7 +9340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28627452, g: 0.2627451, b: 0.3254902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
