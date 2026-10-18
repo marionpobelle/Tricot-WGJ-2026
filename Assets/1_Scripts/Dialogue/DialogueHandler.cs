@@ -41,11 +41,14 @@ public class DialogueHandler : MonoBehaviour
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         GetAllDialogueNodes();
         DialogueRunner.onDialogueComplete.AddListener(OnDialogueClosed);
+    }
+
+    public void StartDialogues()
+    {
         _dialoguesCoroutine = StartCoroutine(PlayDialoguesCoroutine());
     }
 
@@ -81,6 +84,7 @@ public class DialogueHandler : MonoBehaviour
             AvailableNodeTitles.Add(item.ToString());
         }
         AvailableNodeTitles.RemoveAll(x => x == "Dialogues");
+        AvailableNodeTitles.RemoveAll(x => x == "Dialogue_0");
     }
 
     private string GetDialogue()
@@ -134,10 +138,17 @@ public class DialogueHandler : MonoBehaviour
 
     private void OnDialogueClosed()
     {
-        TimerFillGroup.alpha = 0;
-        string currentEmotion = "";
-        DialogueRunner.VariableStorage.TryGetValue("$emotion", out currentEmotion);
-        GameHandler.Instance.SwitchCurrentEmotion(currentEmotion);
+        if(DialogueRunner.Dialogue.CurrentNode == "Dialogue_0")
+        {
+            PuzzleHandler.Instance.StartPuzzles();
+        }
+        else
+        {
+            TimerFillGroup.alpha = 0;
+            string currentEmotion = "";
+            DialogueRunner.VariableStorage.TryGetValue("$emotion", out currentEmotion);
+            GameHandler.Instance.SwitchCurrentEmotion(currentEmotion);
+        }
     }
 
     #region Test
